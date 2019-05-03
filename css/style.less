@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@colorDark: #555556;
+@colorAvarage: #998675;
+
+.container-home {
+    width: 1920px;
+    min-height: 1024px;
+    margin: 0 auto;
+    background-image: url(/img/background-image1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.container-home:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.home-header {
+    width: 100%;
+    min-height: 56px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.home-logo {
+    display: block;
+    width: 185px;
+    height: 58px;
+    margin: 0 0 0 335px;
+    text-decoration: none;
+    box-sizing: border-box;
+    float: left;
+}
+
+.home-logo:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.logo-img {
+    float: left;
+}
+
+.logo-txt {
+    display: block;
+    font-family: Raleway;
+    font-size: 34px;
+    color: #fff;
+    padding: 10px 0 0 5px;
+}
+
+.navigation {
+    width: 1110px;
+    height: 58px;
+    margin: 0 50px 0 0;
+    float: right;
+    box-sizing: border-box;
+}
+
+.navigation a {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    float: left;
+    margin: 20px 30px 0 0;
+}
+
+.navigation a:hover {
+    color: @colorAvarage;
+}
+
+.navigation button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    outline: inherit;
+    background-color: inherit;
+}
+
+.nav-cart {
+    margin: 12px 25px 0 25px;
+    ;
+    background-image: url(/img/cart-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-search {
+    background-image: url(/img/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-cart:hover {
+    filter: invert(0.5);
+}
+
+.nav-search:hover {
+    filter: invert(0.5);
+}
+
+.home-main {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.home-main:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.home-main-block {
+    margin: 285px 0 0 0;
+}
+
+.home-main-block-h3 {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.home-main-block-h1 {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.home-main-block-txt {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding: 0 640px 0 634px;
+    text-align: center;
+    margin: 25px 0 0 0;
+    word-wrap: break-word;
+}
