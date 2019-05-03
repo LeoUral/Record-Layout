@@ -5,6 +5,15 @@ body {
 
 @colorDark: #555556;
 @colorAvarage: #998675;
+@colorFooter: #111111;
+@colorFootTxt: #555555;
+
+/*#555555*/
+
+@colorFootLinks: #959595;
+@colorFootTextSelect: #c7b299;
+
+/*==================== выше переменные ======================*/
 
 .container-home {
     width: 1920px;
@@ -129,6 +138,7 @@ body {
 
 .home-main-block {
     margin: 285px 0 0 0;
+    text-align: center;
 }
 
 .home-main-block-h3 {
@@ -159,6 +169,104 @@ body {
     margin: 25px 0 0 0;
     word-wrap: break-word;
 }
+
 .home-main-btn {
-    margin: 10px 0 0 0;
+    width: 170px;
+    height: 53px;
+    margin: 55px 0 0 0;
+    outline: inherit;
+    background-color: @colorAvarage;
+    border-color: @colorAvarage;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.footer {
+    width: 1920px;
+    min-height: 112px;
+    margin: 0 auto;
+    margin-top: -23px;
+    box-sizing: border-box;
+    background-color: @colorFooter;
+}
+
+.footer:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.footer-left-block {
+    color: @colorFootTxt;
+    list-style-type: none;
+    float: left;
+    margin-left: 17.5%;/*335px*/
+}
+
+.footer-left-block-item {
+    float: left;
+    margin: 35px 12px 0 0;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-left-block-item a {
+    color: @colorFootTxt;
+    text-decoration: none;
+}
+
+.footer-left-block-item:nth-child(n+2):before {
+    content: "|";
+    color: @colorFootTxt;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    float: left;
+    margin: 0 12px 0 0;
+}
+.footer-txt-nav:hover {
+    color: @colorFootLinks;
+}
+.footer-txt-nav-other:hover {
+    color: @colorFootTextSelect;
+}
+.footer-right-block {
+    
+    list-style-type: none;
+    float: right;
+    margin: 47px 335px 0 0; /*335px*/
+   
+}
+.footer-right-block span {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    
+}
+.footer-right-block span:nth-child(3):before {
+    content: "|";
+    color: @colorFootTxt;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    float: left;
+    margin: 0 12px 0 0;
+}
+.footer-right-block-txt1 {
+    color: @colorFootTxt;
+}
+.footer-right-block-txt2 {
+    color: @colorFootLinks;
+    margin-right: 10px;
 }

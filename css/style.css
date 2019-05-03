@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
 }
+/*#555555*/
+/*==================== выше переменные ======================*/
 .container-home {
   width: 1920px;
   min-height: 1024px;
@@ -108,6 +110,7 @@ body {
 }
 .home-main-block {
   margin: 285px 0 0 0;
+  text-align: center;
 }
 .home-main-block-h3 {
   display: block;
@@ -136,5 +139,95 @@ body {
   word-wrap: break-word;
 }
 .home-main-btn {
-  margin: 10px 0 0 0;
+  width: 170px;
+  height: 53px;
+  margin: 55px 0 0 0;
+  outline: inherit;
+  background-color: #998675;
+  border-color: #998675;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.footer {
+  width: 1920px;
+  min-height: 112px;
+  margin: 0 auto;
+  margin-top: -23px;
+  box-sizing: border-box;
+  background-color: #111111;
+}
+.footer:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.footer-left-block {
+  color: #555555;
+  list-style-type: none;
+  float: left;
+  margin-left: 17.5%;
+  /*335px*/
+}
+.footer-left-block-item {
+  float: left;
+  margin: 35px 12px 0 0;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+}
+.footer-left-block-item a {
+  color: #555555;
+  text-decoration: none;
+}
+.footer-left-block-item:nth-child(n+2):before {
+  content: "|";
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  display: block;
+  float: left;
+  margin: 0 12px 0 0;
+}
+.footer-txt-nav:hover {
+  color: #959595;
+}
+.footer-txt-nav-other:hover {
+  color: #c7b299;
+}
+.footer-right-block {
+  list-style-type: none;
+  float: right;
+  margin: 47px 335px 0 0;
+  /*335px*/
+}
+.footer-right-block span {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+.footer-right-block span:nth-child(3):before {
+  content: "|";
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  display: block;
+  float: left;
+  margin: 0 12px 0 0;
+}
+.footer-right-block-txt1 {
+  color: #555555;
+}
+.footer-right-block-txt2 {
+  color: #959595;
+  margin-right: 10px;
 }
