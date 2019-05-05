@@ -51,7 +51,21 @@ body {
   color: #fff;
   padding: 10px 0 0 5px;
 }
+.logo-txt1 {
+  display: block;
+  font-family: Raleway;
+  font-size: 34px;
+  color: #ccc;
+  padding: 10px 0 0 5px;
+}
 .navigation {
+  width: 1110px;
+  height: 58px;
+  margin: 0 50px 0 0;
+  float: right;
+  box-sizing: border-box;
+}
+.navigation1 {
   width: 1110px;
   height: 58px;
   margin: 0 50px 0 0;
@@ -69,10 +83,31 @@ body {
   float: left;
   margin: 20px 30px 0 0;
 }
+.navigation1 a {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ccc;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  float: left;
+  margin: 20px 30px 0 0;
+}
 .navigation a:hover {
   color: #998675;
 }
+.navigation1 a:hover {
+  color: #998675;
+}
 .navigation button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  outline: inherit;
+  background-color: inherit;
+}
+.navigation1 button {
   width: 28px;
   height: 28px;
   border: none;
@@ -228,4 +263,8 @@ body {
 .footer-right-block-txt2 {
   color: #959595;
   margin-right: 10px;
+}
+.container-about {
+  width: 1920px;
+  min-height: 1225px;
 }
