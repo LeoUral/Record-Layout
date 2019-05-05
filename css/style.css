@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/*#555555*/
 /*==================== выше переменные ======================*/
 .container-home {
   width: 1920px;
@@ -156,7 +155,7 @@ body {
   width: 1920px;
   min-height: 112px;
   margin: 0 auto;
-  margin-top: -23px;
+  margin-top: 0;
   box-sizing: border-box;
   background-color: #111111;
 }
