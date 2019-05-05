@@ -81,12 +81,12 @@ body {
 }
 .nav-cart {
   margin: 12px 25px 0 25px;
-  background-image: url(/img/cart-icon.png);
+  background-image: url(../img/cart-icon.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .nav-search {
-  background-image: url(/img/search-icon.png);
+  background-image: url(../img/search-icon.png);
   background-repeat: no-repeat;
   background-position: center;
 }
