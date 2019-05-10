@@ -22,28 +22,58 @@
                  </div>
              </a>
              <nav class="navigation">
-                 <a href="#" class="nav-home">home</a>
-                 <a href="#" class="nav-about">about us</a>
-                 <a href="#" class="nav-portfolio">portfolio</a>
-                 <a href="#" class="nav-features">features</a>
-                 <a href="#" class="nav-blog">blog</a>
-                 <a href="#" class="nav-pricing">pricing</a>
-                 <a href="#" class="nav-shortcodes">shortcodes</a>
-                 <a href="#" class="nav-contact">contact</a>
+                <ul class="navigation-nav">
+                     <li class="navigation-nav-item"><a href="#" class="nav-home">home</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-about">about us</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-portfolio">portfolio</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-features">features</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-blog">blog</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-pricing">pricing</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-shortcodes">shortcodes</a></li>
+                     <li class="navigation-nav-item"><a href="#" class="nav-contact">contact</a></li>
+                 </ul>
                  <button class="nav-cart"></button>
-                 <button class="nav-search"></button>
+                 <form class="navigation-search">
+                     <input class="nav-search" type="search">
+                 </form>
              </nav>
       </header>
       <!-- Header конец ============================-->
-      <main class="home-main">
-         <!-- должен стоять блок отвечающий за левую стрелку -->
-         <section class="home-main-block">
-             <span class="home-main-block-h3">Unique and Modern Design</span>
+      <section class="home-main">
+          <button class="home-main-btn-left">
+              <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  width="40" height="73">
+                  <path class="home-main-icon-left" fill-rule="evenodd" fill="rgb(0, 0, 0)" 
+                  d="M38.026,72.979 L0.005,36.498 L38.026,0.018 L39.995,2.022 L4.066,36.498 L39.995,70.977 L38.026,72.979 Z" /> 
+             </svg>
+          </button>
+      
+         <div class="home-main-block">
+             <span class="home-main-block-h2">Unique and Modern Design</span>
              <span class="home-main-block-h1">Portfolio PSD Template</span>
              <p class="home-main-block-txt">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id&nbsp;quod mazim placerat facer possim assum.</p>
              <button class="home-main-btn">get started</button>
-         </section>
-       </main>
+         </div>
+            <button class="home-main-btn-right">
+              <svg 
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="40" height="73">
+                <path class="home-main-icon-right" fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                 d="M1.974,72.979 L39.995,36.498 L1.974,0.018 L0.005,2.022 L35.934,36.498 L0.005,70.977 L1.974,72.979 Z" />
+            </svg>
+          </button>
+          <div class="home-main-dots">
+              <a href="#" class="home-main-dot"></a>
+              <a href="#" class="home-main-dot"></a>
+              <a href="#" class="home-main-dot"></a>
+              <a href="#" class="home-main-dot"></a>
+              <a href="#" class="home-main-dot"></a>
+          </div>
+          
+       </section>
     </div>
       <!-- Footer начало ========================  -->
       <footer class="footer">
