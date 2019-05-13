@@ -472,22 +472,25 @@ body {
     box-sizing: border-box;
 }
 
-.about-pagination figure {
+.about-pagination-web,
+.about-pagination-develop,
+.about-pagination-custom,
+.about-pagination-market {
     width: 270px;
     margin: 82px 30px 80px 0;
    
     
 }
-.about-pagination figure path {
+.about-pagination div path {
     fill: @colorDark;
 }
-.about-pagination figure svg {
+.about-pagination div svg {
     width: 51px;
     height: 48px;
     margin: 0 0 30px 113px;
     
 }
-.about-pagination figure span {
+.about-pagination div span {
     display: block;
     text-align: center;
     color: @colorDark;
@@ -496,7 +499,7 @@ body {
     font-weight: 800;
     text-transform: capitalize;
 }
-.about-pagination figure p {
+.about-pagination div p {
     display: block;
     text-align: center;
     font-family: Montserrat;
@@ -510,13 +513,13 @@ body {
     margin: 0 0 0 100px;
     border-bottom: 3px solid @colorDark;
 }
-.about-pagination figure:hover path {
+.about-pagination div:hover path {
     fill: @colorFootTextSelect;
 }
-.about-pagination figure:hover span {
+.about-pagination div:hover span {
     color: @colorFootTextSelect;
 }
-.about-pagination figure:hover div {
+.about-pagination div:hover div {
     border-bottom: 3px solid @colorFootTextSelect;
 }
 .about-waxom {
