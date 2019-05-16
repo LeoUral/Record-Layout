@@ -2,42 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
-@font-face {
-    font-family: "Montserrat";
-    font-style: light;
-    font-weight: 300;
-    src: local("Montserrat"),
-        url("../font/montserrat_light.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Montserrat";
-    font-style: extra-bold;
-    font-weight: 300;
-    src: local("Montserrat"),
-        url("../font/montserrat_extrabold.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Releway";
-    font-style: light;
-    font-weight: 300;
-    src: local("Releway"),
-        url("../font/raleway_light.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Releway";
-    font-style: extra-bold;
-    font-weight: 800;
-    src: local("Releway"),
-        url("../font/raleway_extrabold.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Releway";
-    font-style: black;
-    font-weight: 900;
-    src: local("Releway"),
-        url("../font/raleway_black.ttf") format("ttf");
-}
+@import "fonts.less";
 
 @colorDark: #555556;
 @colorAvarage: #998675;
@@ -131,7 +96,7 @@ body {
 
 .logo-txt {
     display: block;
-    font-family: "Raleway", sans-serif;
+    font-family: "raleway-light", sans-serif;
     font-weight: 300;
     font-size: 34px;
     color: #fff;
@@ -141,7 +106,8 @@ body {
 
 .logo-txt1 {
     display: block;
-    font-family: "Raleway", sans-serif;
+    font-family: "raleway-light", sans-serif;
+    font-weight: 300;
     font-size: 34px;
     color: #ccc;
     padding: 10px 0 0 5px;
@@ -175,7 +141,7 @@ body {
 }
 
 .navigation li a {
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat-light, sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #fff;
@@ -187,7 +153,7 @@ body {
 }
 
 .navigation1 li a {
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat-light, sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #ccc;
@@ -240,12 +206,21 @@ body {
     background-image: url(../img/search-icon.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     width: 28px;
     height: 28px;
     border: none;
-    outline: inherit;
+    outline: none;
     background-color: inherit;
     margin: 20px 0 0 0;
+    color: #fff;
+}
+.nav-search:focus {
+    width: 300px;
+    transition: width 1s ease-out;
+    background-position: right;
+    /*outline: 1px solid gray;*/
+    color: #fff;
 }
 
 .nav-cart:hover {
@@ -307,7 +282,7 @@ body {
     display: block;
     text-align: center;
     color: #fff;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-medium, sans-serif;
     font-size: 36px;
     font-weight: 500;
 }
@@ -316,13 +291,13 @@ body {
     display: block;
     text-align: center;
     color: #fff;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-extra-bold, sans-serif;
     font-size: 52px;
     font-weight: 800;
 }
 
 .home-main-block-txt {
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat-light, sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #fff;
@@ -340,7 +315,7 @@ body {
     background-color: @colorAvarage;
     border-color: @colorAvarage;
     color: #fff;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-extra-bold, sans-serif;
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
@@ -393,107 +368,15 @@ body {
     background-image: url(../img/dot-on.png);
 }
 
-.footer {
-    width: 1920px;
-    min-height: 112px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background-color: @colorFooter;
-    
-}
-.footer:after {
-    content: "";
-    display: block;
-    width: 100%;
-    clear: both;
-}
 
-.footer-left-block {
-    color: @colorFootTxt;
-    list-style-type: none;
-    float: left;
-    padding: 0;
-    margin-left: 350px;
-    /*335px*/
-}
 
-.footer-left-block-item {
-    float: left;
-    margin: 35px 12px 0 0;
-    /*35 12 0 0*/
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-}
-
-.footer-left-block-item a {
-    color: @colorFootTxt;
-    text-decoration: none;
-}
-
-.footer-left-block-item:nth-child(n+2):before {
-    content: "|";
-    color: @colorFootTxt;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    display: block;
-    float: left;
-    margin: 0 12px 0 0;
-}
-
-.footer-txt-nav:hover {
-    color: @colorFootLinks;
-}
-
-.footer-txt-nav-other:hover {
-    color: @colorFootTextSelect;
-}
-
-.footer-right-block {
-    list-style-type: none;
-    width: 590px;/*335*/
-    float: right;
-    margin: 47px 80px 0 0;
-    /*335px*/
-}
-
-.footer-right-block span {
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    display: block;
-    float: left;
-    margin-left: 5px;
-    color: @colorFootTxt;
-}
-
-.footer-right-block span:nth-child(3):before {
-    content: "|";
-    color: @colorFootTxt;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    display: block;
-    float: left;
-    margin: 0 12px 0 0;
-}
-
-.footer-right-block a {
-    text-decoration: none;
-}
-
-.footer-right-block a span:hover {
-    color: @colorFootLinks;
-}
-
-.container-about {
+.about {
     width: 1920px;
     min-height: 1225px;
     margin: 0 auto;
     box-sizing: border-box;
 }
-.container-about:after {
+.about:after {
     content: "";
     display: block;
     width: 100%;
@@ -502,7 +385,8 @@ body {
 
 .about-pagination {
     width: 100%;
-    min-height: 375px;    
+    min-height: 375px;
+    margin: 0 auto;    
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -531,7 +415,7 @@ body {
     display: block;
     text-align: center;
     color: @colorDark;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-extra-bold, sans-serif;
     font-size: 22px;
     font-weight: 800;
     text-transform: capitalize;
@@ -539,7 +423,7 @@ body {
 .about-pagination div p {
     display: block;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat-light, sans-serif;
     font-size: 13px;
     font-weight: 300;
     margin: 25px 0 25px 0;
@@ -576,7 +460,7 @@ body {
 .about-waxom-title {
     display: block;
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-extra-bold, sans-serif;
     font-size: 30px;
     font-weight: 800;
     text-transform: capitalize;
@@ -589,7 +473,7 @@ body {
     margin: 21px 0 0 0;
     padding: 0 575px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat-light, sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
@@ -652,7 +536,7 @@ body {
     text-align: left;
     width: 570px;
     padding: 50px 0 0 375px;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-light, sans-serif;
     font-size: 28px;
     font-weight: 300;
     text-transform: capitalize;
@@ -669,7 +553,7 @@ body {
     display: block;
     text-align: left;
     width: 570px;
-    font-family: "Montserrat", sans-serif;
+    font-family: montserrat-light, sans-serif;
     font-size: 18px;
     font-weight: 300;
     color: @colorAsideTxt;
@@ -690,7 +574,7 @@ body {
 .about-footer-btn-txt {
     display: block;
     text-align: center;
-    font-family: "Raleway", sans-serif;
+    font-family: raleway-extra-bold, sans-serif;
     font-size: 14px;
     font-weight: 800;
     text-transform:uppercase;
@@ -704,3 +588,99 @@ body {
     box-shadow: none;
 }
 /*==== конец второй страницы ====*/
+
+
+/*===== ниже FOOTER =======*/
+.footer {
+    width: 1920px;
+    min-height: 112px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: @colorFooter;
+    
+}
+.footer:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.footer-left-block {
+    color: @colorFootTxt;
+    list-style-type: none;
+    float: left;
+    padding: 0;
+    margin-left: 350px;
+    /*335px*/
+}
+
+.footer-left-block-item {
+    float: left;
+    margin: 35px 12px 0 0;
+    /*35 12 0 0*/
+    font-family: montserrat-light, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-left-block-item a {
+    color: @colorFootTxt;
+    text-decoration: none;
+}
+
+.footer-left-block-item:nth-child(n+2):before {
+    content: "|";
+    color: @colorFootTxt;
+    font-family: montserrat-light, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+.footer-txt-nav:hover {
+    color: @colorFootLinks;
+}
+
+.footer-txt-nav-other:hover {
+    color: @colorFootTextSelect;
+}
+
+.footer-right-block {
+    list-style-type: none;
+    width: 590px;/*335*/
+    float: right;
+    margin: 47px 80px 0 0;
+    /*335px*/
+}
+
+.footer-right-block span {
+    font-family: montserrat-light, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    float: left;
+    margin-left: 5px;
+    color: @colorFootTxt;
+}
+
+.footer-right-block span:nth-child(3):before {
+    content: "|";
+    color: @colorFootTxt;
+    font-family: montserrat-light, sans-serif;;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+.footer-right-block a {
+    text-decoration: none;
+}
+
+.footer-right-block a span:hover {
+    color: @colorFootLinks;
+}
