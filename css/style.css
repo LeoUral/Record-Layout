@@ -3,6 +3,36 @@ body {
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Montserrat";
+  font-style: light;
+  font-weight: 300;
+  src: local("Montserrat"), url("../font/montserrat_light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: extra-bold;
+  font-weight: 300;
+  src: local("Montserrat"), url("../font/montserrat_extrabold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Releway";
+  font-style: light;
+  font-weight: 300;
+  src: local("Releway"), url("../font/raleway_light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Releway";
+  font-style: extra-bold;
+  font-weight: 800;
+  src: local("Releway"), url("../font/raleway_extrabold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Releway";
+  font-style: black;
+  font-weight: 900;
+  src: local("Releway"), url("../font/raleway_black.ttf") format("ttf");
+}
 /*==================== выше переменные ======================*/
 .container-home {
   width: 1920px;
@@ -78,7 +108,8 @@ body {
 }
 .logo-txt {
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
   font-size: 34px;
   color: #fff;
   padding: 10px 0 0 5px;
@@ -86,7 +117,7 @@ body {
 }
 .logo-txt1 {
   display: block;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 34px;
   color: #ccc;
   padding: 10px 0 0 5px;
@@ -116,9 +147,9 @@ body {
   float: left;
 }
 .navigation li a {
-  font-family: Montserrat;
-  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  font-size: 14px;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
@@ -128,9 +159,9 @@ body {
   /*20 30 0 0*/
 }
 .navigation1 li a {
-  font-family: Montserrat;
-  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  font-size: 14px;
   color: #ccc;
   text-decoration: none;
   text-transform: capitalize;
@@ -237,7 +268,7 @@ body {
   display: block;
   text-align: center;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 36px;
   font-weight: 500;
 }
@@ -245,12 +276,12 @@ body {
   display: block;
   text-align: center;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 52px;
-  font-weight: 900;
+  font-weight: 800;
 }
 .home-main-block-txt {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #fff;
@@ -267,7 +298,7 @@ body {
   background-color: #998675;
   border-color: #998675;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
@@ -338,7 +369,7 @@ body {
   float: left;
   margin: 35px 12px 0 0;
   /*35 12 0 0*/
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 300;
 }
@@ -349,7 +380,7 @@ body {
 .footer-left-block-item:nth-child(n+2):before {
   content: "|";
   color: #555555;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 300;
   display: block;
@@ -371,7 +402,7 @@ body {
   /*335px*/
 }
 .footer-right-block span {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 300;
   display: block;
@@ -382,7 +413,7 @@ body {
 .footer-right-block span:nth-child(3):before {
   content: "|";
   color: #555555;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 300;
   display: block;
@@ -434,7 +465,7 @@ body {
   display: block;
   text-align: center;
   color: #555556;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-weight: 800;
   text-transform: capitalize;
@@ -442,7 +473,7 @@ body {
 .about-pagination div p {
   display: block;
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 300;
   margin: 25px 0 25px 0;
@@ -478,7 +509,7 @@ body {
 .about-waxom-title {
   display: block;
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 30px;
   font-weight: 800;
   text-transform: capitalize;
@@ -491,7 +522,7 @@ body {
   margin: 21px 0 0 0;
   padding: 0 575px;
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -553,7 +584,7 @@ body {
   text-align: left;
   width: 570px;
   padding: 50px 0 0 375px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 28px;
   font-weight: 300;
   text-transform: capitalize;
@@ -570,7 +601,7 @@ body {
   display: block;
   text-align: left;
   width: 570px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: #615855;
@@ -591,7 +622,7 @@ body {
 .about-footer-btn-txt {
   display: block;
   text-align: center;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
