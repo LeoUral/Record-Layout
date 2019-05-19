@@ -14,6 +14,7 @@ body {
 @colorLightBackground: #fbfaf8;
 @colorAside: #241d1a;
 @colorAsideTxt: #615855;
+@colorVideo_bg: #828384;
 
 /*==================== выше переменные ======================*/
 
@@ -629,9 +630,18 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     text-transform: capitalize;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid @colorAvarage;
+    border-radius: 5px;
     margin: 0 10px 0 0;
+    outline: none;
+}
+.project-link:hover {
+    background-color: @colorAvarage;
+    color: #fff;
+}
+.project-link:active {
+    background-color: @colorDark;
+    color: #fff;
 }
 .project-wrap {
     display: flex;
@@ -645,9 +655,10 @@ body {
 .project-wrap article {
     width: 370px;
     height: 340px;
+    position: relative;
 }
 .project-wrap-box1 {
-    background-color: @colorLightBackground;
+    background-color: @colorDark;
     background-image: url(../img/project-bg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -726,9 +737,51 @@ body {
     color: @colorFootLinks;
     padding: 0 0 0 30px;
 }
-.project-wrap article:hover { /*======= продолжение=======*/
-    filter: opacity(50%);
-
+.project-wrap-btn-link,
+.project-wrap-btn-search {
+    display: none;
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+.project-wrap-btn-link {
+    top: 108px;
+    left: 146px;
+    background-image: url("../img/link.png");
+}
+.project-wrap-btn-search {
+    top: 108px;
+    left: 200px;
+    background-image: url("../img/lupa.png");
+}
+.project-wrap article:hover {
+    filter: opacity(80%);
+    filter: brightness(60%);
+     
+}
+.project-wrap article:hover .project-wrap-btn-link {
+    display: block;
+}
+.project-wrap article:hover .project-wrap-btn-search {
+    display: block;
+}
+.project-wrap article:hover .project-wrap-btn-link:hover {
+    background-color: @colorDark;
+}
+.project-wrap article:hover .project-wrap-btn-link:active {
+    background-color: @colorAvarage;
+}
+.project-wrap article:hover .project-wrap-btn-search:hover {
+    background-color: @colorDark;
+}
+.project-wrap article:hover .project-wrap-btn-search:active {
+    background-color: @colorAvarage;
 }
 .project-wrap article:hover .project-wrap-box-arrow {
     background-color: @colorDark;
@@ -742,6 +795,158 @@ body {
 .project-wrap article:hover .project-wrap-txt {
     color: @colorFootTextSelect;
 }
+.project-load-btn {
+    width: 170px;
+    min-height: 50px;
+    background-color: @colorAvarage;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 0 0 0;
+    border-radius: 5px;
+    margin: 40px 0 0 800px;
+    font-family: raleway-extra-bold, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    outline: none;
+}
+/*===================== Раздел с видео блоком ==========*/
+.presentation {
+    width: 1920px;
+    min-height: 702px;
+    margin: 0 auto;
+    background-color: @colorVideo_bg;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    
+}
+.presentation:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.presentation-wrap {
+    width: 620px;
+    min-height: 290px;
+    padding: 210px 650px 0 650px;
+    position: absolute;
+    z-index: 1;
+
+}
+.presentation-play-btn {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin: 0 270px;
+}
+.presentation-play-btn svg {
+    margin: 15px 0 0 15px;
+    fill: #fff;
+}
+.presentation-play-btn:hover svg {
+    fill: @colorDark;
+}
+.presentation-play-btn:active svg {
+    fill: #000;
+}
+.presentation-title {
+    display: block;
+    text-align: center;
+    font-family: raleway-medium, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 40px 0 0 0;
+    color: #fff;
+}
+.presentation-txt {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: montserrat-light, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.presentation-time {
+    text-align: center;
+    color: @colorFootTextSelect;
+    font-family: montserrat-light, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.presentation-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ============== Блок Excellent ============  */
+.excellent {
+    width: 1920px;
+    min-height: 696px;
+    margin: 0 auto;
+    background-color: #fff;
+    background-image: url("../img/excellent-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+.excellent:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.excellent-wrap {
+    width: 675px;
+    height: 340px;
+    padding: 190px 0 0 875px;
+}
+.excellent-title {
+    display: block;
+    text-align: left;
+    font-family: raleway-medium, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.excellent-txt {
+    display: block;
+    text-align: left;
+    font-family: montserrat-light, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.excellent-list {
+    margin: 30px;
+    list-style-type: none;
+    font-family: montserrat-light, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+.excellent-list-item {
+    line-height: 32px;
+}
+.excellent-list-item:before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/arrow-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin: 5px 20px 0 0;
+}
 
 /*===== ниже FOOTER =======*/
 .footer {
@@ -750,7 +955,6 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     background-color: @colorFooter;
-
     
 }
 .footer:after {
