@@ -446,7 +446,7 @@ body {
 }
 .about-waxom {
     width: 100%;
-    min-height: 700px;
+    min-height: 696px;
     margin: 0 auto;
     background-color: @colorLightBackground;
     box-sizing: border-box;
@@ -946,6 +946,82 @@ body {
     background-size: cover;
     float: left;
     margin: 5px 20px 0 0;
+}
+/*========== COUNTER =========*/
+.counter {
+    width: 1920px;
+    min-height: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: rgba(33,27,25,1);
+    background: -moz-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,27,25,1)), color-stop(100%, rgba(78,52,39,1)));
+    background: -webkit-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+    background: -o-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+    background: -ms-linear-gradient(left, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+    background: linear-gradient(to right, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211b19', endColorstr='#4e3427', GradientType=1 );  
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 60px 0 60px 490px;
+}
+.counter:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.counter-client,
+.counter-coffee,
+.counter-blog,
+.counter-likes,
+.counter-launch {
+    display: block;
+    width: 420px;
+    height: 180px;
+    padding: 0;
+}
+.counter-client,
+.counter-coffee,
+.counter-blog,
+.counter-likes {
+    margin: 0 70px 0 0;
+}
+.counter svg {
+    display: block;
+    fill: @colorAvarage;
+    width: 54px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+}
+.counter-client-title,
+.counter-coffee-title,
+.counter-blog-title,
+.counter-likes-title,
+.counter-launch-title {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-family: montserrat-light,sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    padding: 25px 0 0 0;
+}
+.counter-client-txt,
+.counter-coffee-txt,
+.counter-blog-txt,
+.counter-likes-txt,
+.counter-launch-txt {
+    display: block;
+    text-align: center;
+    color: @colorAvarage;
+    font-family: montserrat-light, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
 }
 
 /*===== ниже FOOTER =======*/
